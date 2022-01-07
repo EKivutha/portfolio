@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "../constants/data";
+import Image from 'next/image';
 
 export default function AboutMe() {
   return (
@@ -41,7 +42,7 @@ export default function AboutMe() {
                 >
                   mail
                 </a>{" "}
-                and I'll get back to you.
+                and I will get back to you.
               </p>
             </div>
             <div className="mt-8">
@@ -49,7 +50,7 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a job currently, If you see me as a good fit,
+                I am looking for a job currently, If you see me as a good fit,
                 check my{" "}
                 <a
                   href={userData.resumeUrl}
@@ -58,7 +59,7 @@ export default function AboutMe() {
                 >
                   CV
                 </a>{" "}
-                and I'd love to work for you.
+                and I would love to work for you.
               </p>
             </div>
             {/* Social Links */}
@@ -143,51 +144,51 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                 className="h-20 w-20 mx-4 my-4"
               />

@@ -1,5 +1,5 @@
 const debug = process.env.NODE_ENV !== "production";
-const withPlugins = require('next-compose-plugins');
+// const withPlugins = require('next-compose-plugins');
 const basePath = ON_GITHUB_PAGES ? '/portfolio' : '';
 const assetPrefix = ON_GITHUB_PAGES ? '/porfolio/' : '';
 

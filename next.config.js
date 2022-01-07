@@ -1,23 +1,48 @@
 const debug = process.env.NODE_ENV !== "production";
-// const withPlugins = require('next-compose-plugins');
-const basePath = ON_GITHUB_PAGES ? '/portfolio' : '';
-const assetPrefix = ON_GITHUB_PAGES ? '/porfolio/' : '';
-
-module.exports = {
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+module.exports = withPlugins([
+  [optimizedImages, {
+    /* config for next-optimized-images */
+    imagesName: '[name]-[hash].[ext]',
+    handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+    removeOriginalExtension: false,
+    optimizeImages: true,
+    optimizeImagesInDev: false,
+    mozjpeg: {
+      quality: 80,
+    },
+    optipng: {
+      optimizationLevel: 3,
+    },
+    pngquant: false,
+    gifsicle: {
+      interlaced: true,
+      optimizationLevel: 3,
+    },
+    svgo: {
+      // enable/disable svgo plugins here
+    },
+    webp: {
+      preset: 'default',
+      quality: 75,
+    },
+  }],
+{
   reactStrictMode: true,
   // distDir: './build',
   // outDir: './out'
-  basePath,
-  assetPrefix,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   exportPathMap: function () {
     return {
       "/": { page: "/" },
       "/about": { page: "/about" },
     }
   },
-     
 
-// assetPrefix: !debug ? '/porfolio/' : '',
+
+  assetPrefix: !debug ? '/porfolio/' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
@@ -37,5 +62,5 @@ webpackDevMiddleware: (config) => {
   // console.log(config);
   // Important: return the modified config
   return config
-}, */
-}
+}, */}
+])

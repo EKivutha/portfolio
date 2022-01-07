@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "deploy": "firebase deploy --only functions,hosting",
-    "gh:deploy": "gh-pages -b gh-pages -d out",
+    "gh:deploy": "gh-pages -d .next",
     "fire:deploy": "npm ci && npm run build",
     "lint": "next lint"
   },

@@ -1,5 +1,7 @@
 name: Deploy to GitHub Pages
 
+env:
+      NEXT_PUBLIC_BASE_PATH: /porfolio
 
 on:
   push:

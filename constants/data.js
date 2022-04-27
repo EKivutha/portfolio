@@ -32,21 +32,7 @@ const userData = {
             year: '2022',
             companyLink:'',
             desc:'Traffic detection and analysis',
-        },
-        {
-            title:'Tech Lead & CTO',
-            company:'Mvuru car app',
-            year: '2022',
-            companyLink:'',
-            desc:'Working on a mobile app to link buyers to showrooms',
-        },
-        {
-            title:'Tech Lead',
-            company:'Akron Movers',
-            year: '2021',
-            companyLink:'',
-            desc:'Working closley with Nairobi residents to offer relocation services',
-        },
+        },       
         {
             title:'Software Developer',
             company:'eProd-Solutions',
